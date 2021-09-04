@@ -1,0 +1,15 @@
+<div class="col-sm-12 header text-center text-primary header">
+    <h1>User Info <span class="badge badge-secondary">Beta</span></h1>
+</div>
+<?php if (!$this->error) :?>
+    <div class="col-sm-6 bg-warning text-center">
+        Users`s name:<br/>
+        <?=$this->user->getName()?>
+    </div>
+    <div class="col-sm-6 bg-primary text-center">
+        Users`s email:<br/>
+        <?=$this->user->getEmail()?>
+    </div>
+<? else:?>
+    <div class="col-sm-12 mt-2 text-danger text-center">ACHTUNG!!!!!! USER NOT FOUND</div>
+<? endif;?>

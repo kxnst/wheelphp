@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <?=$this->title?>
+        </title>
+        <?=$this->renderJsFile()?>
+        <?=$this->renderCssFile()?>
+    </head>
+    <body>
+        <?=$this->renderInlineJs()?>
+        <?=$this->renderInlineCss()?>
+        <?=$this->renderView()?>
+    </body>
+</html>
